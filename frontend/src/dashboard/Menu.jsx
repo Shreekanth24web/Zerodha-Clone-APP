@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from 'react-router-dom'
-import '../styles/Dashboard/menu.css';  
+import '../styles/Dashboard/menu.css';
 
 function Menu() {
 
@@ -24,6 +24,12 @@ function Menu() {
 
     const menuClass = 'menu';
     const activeMenuClass = 'menu selected'
+
+    const handleLogout = () => {
+        localStorage.clear();
+        setSelectedMenu(5)
+        navigate("/", { replace: true });
+    }
 
     return (
         <div className="menu-container">
@@ -60,9 +66,9 @@ function Menu() {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/" onClick={() => handleClick(5)} style={{ textDecoration: 'none', fontWeight: '800' }} >
-                            <p className={selectedMenu === 5 ? activeMenuClass : menuClass} style={{ fontSize: '15px', fontWeight: '700' }}>LogOut</p>
-                        </Link>
+                        <p onClick={handleLogout} style={{ textDecoration: 'none', fontWeight: '800' }} >
+                            <p className={selectedMenu === 5 ? activeMenuClass : menuClass} style={{ fontSize: '15px', fontWeight: '700',cursor:'pointer' }}>LogOut</p>
+                        </p>
                     </li>
                 </ul>
                 <hr className="menu-hr" />
