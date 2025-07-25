@@ -9,7 +9,7 @@ function Summary() {
 
 
     useEffect(() => {
-        axios.get('http://localhost:4001/allHoldings')
+        axios.get(`${process.env.REACT_APP_API_URL}/allHoldings`)
             .then((res) => {
                 setSummaryData(res.data)
             })

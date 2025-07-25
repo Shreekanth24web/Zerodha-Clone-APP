@@ -7,7 +7,7 @@ function Orders() {
 
     )
     useEffect(() => {
-        axios.get("http://localhost:4001/allOrders").then((res) => { 
+        axios.get(`${process.env.REACT_APP_API_URL}/allOrders`).then((res) => { 
             setAllOrders(res.data)
         })
     }, [])
@@ -18,7 +18,7 @@ function Orders() {
  
         if (window.confirm("Are you sure you want to delete this order?")) {
 
-            axios.delete("http://localhost:4001/deleteOrders/" + id)
+            axios.delete(`${process.env.REACT_APP_API_URL}/deleteOrders/` + id)
                 .then((res) => {
                     console.log(res.data.data)
                      alert("Order deleted successfully!");

@@ -6,7 +6,7 @@ import { VerticalGraph } from './VerticalGraph';
 function Holdings() {
     const [allHoldings, setAllHoldings] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:4001/allHoldings").then((res) => { 
+        axios.get(`${process.env.REACT_APP_API_URL}/allHoldings`).then((res) => { 
             setAllHoldings(res.data)
         })
     }, [])

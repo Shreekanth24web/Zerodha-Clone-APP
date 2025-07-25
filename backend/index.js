@@ -4,12 +4,23 @@ const app = express()
 const PORT = process.env.PORT || 4001;
 const mongoose = require("mongoose");
 const URL = process.env.MONGO_URL;
+const path = require('path');
 
 const cors = require("cors")
 const bodyParser = require("body-parser")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcryptjs")
 const JWT_SECRET = process.env.JWT_SECRET;
+
+ 
+
+// import { fileURLToPath } from 'url';
+// import { dirname } from 'path';
+
+// // Required if using ES modules
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
+
 
 app.use(cors());
 app.use(bodyParser.json())
@@ -38,7 +49,7 @@ app.get("/allHoldings", async (req, res) => {
 })
 
 //Positoins
-app.get('/allPostions', async (req, res) => {
+app.get('/allPositions', async (req, res) => {
     try {
         const allPositions = await PositionsModel.find({})
         res.status(200).json(allPositions)
@@ -100,7 +111,7 @@ app.post("/signup", async (req, res) => {
     try {
 
         const { username, email, password } = req.body;
-        const existingUser = await UserModel.findOne({ email })  
+        const existingUser = await UserModel.findOne({ email })
         if (existingUser) {
             return res.status(400).json({ error: "User already exists" });
         }
@@ -133,7 +144,7 @@ app.post('/login', async (req, res) => {
         if (!user) return res.status(400).json({ msg: "Invalid USER credentials - 1" });
 
         const isMatch = await bcrypt.compare(password, user.password);
-        console.log("Password match:", isMatch);
+
         if (!isMatch) return res.status(400).json({ msg: "Invalid password match credentials -2" });
 
         const token = jwt.sign({ id: user._id }, JWT_SECRET, { expiresIn: "1d" });
@@ -151,7 +162,16 @@ app.post('/login', async (req, res) => {
     }
 });
 
- 
+// const buildPath = path.join(__dirname, "../frontend/build");
+// app.use(express.static(buildPath));
+// app.get("*", (req, res) => {
+//     res.sendFile(path.join(buildPath, "index.html"));
+// });
+
+
+
+
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 })

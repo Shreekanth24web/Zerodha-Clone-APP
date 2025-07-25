@@ -5,9 +5,13 @@ import '../styles/Dashboard/positions.css';
 function Positions() {
     const [allPositions, setAllPositions] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:4001/allPostions").then((res) => { 
-            setAllPositions(res.data)
-        })
+        axios.get(`${process.env.REACT_APP_API_URL}/allPositions`)
+            .then((res) => {
+                setAllPositions(res.data)
+            })
+            .catch((err)=>{
+                console.log("positions page error",err)
+            })
     }, []);
 
     return (
