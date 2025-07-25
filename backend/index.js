@@ -13,15 +13,6 @@ const bcrypt = require("bcryptjs")
 const JWT_SECRET = process.env.JWT_SECRET;
 
  
-
-// import { fileURLToPath } from 'url';
-// import { dirname } from 'path';
-
-// // Required if using ES modules
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = dirname(__filename);
-
-
 app.use(cors());
 app.use(bodyParser.json())
 
@@ -162,8 +153,8 @@ app.post('/login', async (req, res) => {
     }
 });
 
-// const buildPath = path.join(__dirname, "../frontend/build");
-// app.use(express.static(buildPath));
+const buildPath = path.join(__dirname, "../frontend/build");
+app.use(express.static(buildPath));
 // app.get("*", (req, res) => {
 //     res.sendFile(path.join(buildPath, "index.html"));
 // });
