@@ -1,0 +1,8 @@
+.universe-section img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+
+}
+.universe-section img{
+    height: 50px;
+}

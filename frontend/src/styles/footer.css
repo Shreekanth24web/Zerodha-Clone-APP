@@ -1,0 +1,59 @@
+ .footer-section img {
+     width: 60%;
+ }
+
+ .footer-section p {
+     font-size: 0.9rem;
+     color: #424242;
+ }
+
+ .social-app-g-1 a,
+ .social-app-g-2 a {
+     text-decoration: none;
+     color: #424242;
+     opacity: 0.8;
+ }
+
+ .social-app-g-1 a:hover,
+ .social-app-g-2 a:hover {
+     color: #387ed1;
+     opacity: 1;
+ }
+
+ .account-section h5 {
+     color: #424242;
+ }
+.account-section a{
+    text-decoration: none;
+    font-size: 14px;
+}
+ .account-section p {
+     color: #424242;
+     cursor: pointer;
+     opacity: 0.8;
+ }
+
+ .account-section p:hover,
+ .footer-link-section a:hover {
+     color: #387ed1;
+     opacity: 1;
+ }
+
+ .footer-text-section p {
+     font-size: 12px;
+     color: #9b9b9b;
+     text-align: justify;
+     line-height: 1.8;
+ }
+
+ .footer-text-section a {
+     text-decoration: none;
+     font-weight: 500;
+ }
+
+ .footer-link-section a {
+     text-decoration: none;
+     font-size: 12px;
+     color: #9b9b9b;
+     font-weight: 500;
+ }

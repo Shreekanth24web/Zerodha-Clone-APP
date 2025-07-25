@@ -1,0 +1,18 @@
+.kite-img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.kite-text-section p{
+    text-align: justify;
+}
+.app-links img:hover{
+    opacity: 0.8;
+}
+.link-text a:hover{
+    color: #444;
+    font-weight: 500;
+}
+.link-text a{
+    color: #387ed1;
+    font-weight: 500;
+}

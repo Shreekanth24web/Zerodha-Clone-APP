@@ -1,0 +1,89 @@
+/* Memu */
+.menu-container {
+  display: flex;
+  align-items: center;  
+  flex-basis: 68%; 
+  padding: 0px 20px; 
+}
+
+.kit-logo {
+   margin-top: -8px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menus ul { 
+  list-style-type: none; 
+  display: flex;
+  align-items: center;
+}
+
+.menus li {
+  margin-right: 30px; 
+  margin-top: 1px;
+}
+
+.menu {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(70, 70, 70);
+}
+
+.menu.selected {
+  color: #f56834;
+}
+
+.menu-hr {
+  border-left: 0.8px solid red;
+  height: 30px;
+  margin-top: -15px;
+}
+
+.profile {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.profile .avatar {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f56834;
+  border-radius: 100%; 
+  background: #f9c6f9;
+  margin-right: 8px;
+  
+}
+
+.profile.username {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* sudo selectors */
+
+.menu:hover {
+  color: rgb(245, 104, 52);
+}
+
+.profile:hover {
+  cursor: pointer;
+}
+
+.profile:hover .username {
+  cursor: pointer;
+  color: rgb(223, 91, 43);
+}
+
+
+ 

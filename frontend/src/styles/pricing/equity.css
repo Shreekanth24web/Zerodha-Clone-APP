@@ -1,0 +1,22 @@
+ .outer-border {
+     border: 2px solid lightgrey;
+     border-radius: 10px;
+     display: inline-block;
+ }
+
+ .plain-table td,
+ .plain-table th { 
+     padding: 15px;
+     vertical-align: middle;
+     color: #555;
+ }
+
+ .plain-table thead tr th {
+     font-weight: 500;
+     color: #424242;
+     border-bottom: 2px solid lightgrey;
+ }
+
+ .commodity-agri {
+     font-weight: 500;
+ }

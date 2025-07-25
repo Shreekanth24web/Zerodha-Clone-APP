@@ -1,0 +1,24 @@
+.hover-tab {
+    color: #387ed1;
+    transition: color 0.3s ease;
+}
+
+.chargeslinks .hover-tab:hover {
+    color: #666; 
+}
+ 
+.chargeslinks .hover-tab.active {
+    color: #666;  
+    font-weight: 500;
+}
+.brokerage-calculate h4{
+    font-weight: 400;
+    color: #424242;
+}
+.brokerage-calculate a{
+    color: #387ed1;
+}
+.brokerage-calculate a:hover{
+    color: #424242;
+    transition: color 0.3s ease;
+}

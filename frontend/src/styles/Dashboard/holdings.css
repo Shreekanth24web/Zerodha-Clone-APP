@@ -1,0 +1,106 @@
+/* Holdings */
+.Holdings-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(71, 71, 71);
+  margin-bottom: 2%;
+  margin-top: -3%;
+}
+
+.Holdings-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.Holdings-table tr {
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.Holdings-table th {
+  padding: 10px 0px;
+  color: rgb(94, 94, 94);
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.Holdings-table tr th:first-child,
+.Holdings-table tr td:first-child {
+  text-align: left;
+}
+
+.Holdings-table tr th:nth-child(1),
+.Holdings-table tr th:nth-child(4),
+.Holdings-table tr th:nth-child(6) {
+  border-right: 2px solid #f1f1f1;
+}
+
+.Holdings-table tr td:nth-child(1),
+.Holdings-table tr td:nth-child(4),
+.Holdings-table tr td:nth-child(6) {
+  border-right: 2px solid #f1f1f1;
+}
+
+.Holdings-table tr td:last-child {
+  font-size: 1rem;
+}
+
+.Holdings-table td {
+  padding: 10px 0px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+.Holdings-table td.profit {
+  color: #48c237;
+}
+
+.Holdings-table td.loss {
+  color: #fa764e;
+}
+
+
+.holding-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.holding-col {
+  flex-basis: 33%;
+}
+
+.holding-col h5 {
+  font-size: 1.8rem;
+  color: rgb(71, 71, 71);
+  font-weight: 300;
+}
+
+.holding-col h5 span {
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+.holding-col p {
+  font-size: 0.8rem;
+  color: rgb(153, 153, 153);
+  font-weight: 300;
+  margin-top: 2%;
+}
+ 
+.holding-col .profit {
+  color: #48c237;
+}
+
+.holding-col .loss {
+  color: #fa764e;
+}
+
+/* sudo selector */
+.item:hover {
+  cursor: pointer;
+}

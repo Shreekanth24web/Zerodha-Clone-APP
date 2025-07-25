@@ -1,0 +1,19 @@
+.right-img-section img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.right-text-section a:hover ,.zerodha-tech:hover {
+    color: #444;
+    font-weight: 500;
+}
+
+.right-text-section a,.zerodha-tech {
+    color: #387ed1;
+    font-weight: 500;
+}
+.right-text-section p{
+    text-align: justify;
+} 
+ 
+  

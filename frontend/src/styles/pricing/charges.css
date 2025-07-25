@@ -1,0 +1,33 @@
+.charges-text-section h5 {
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.charges-text-section p {
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.charges-text-section ul li {
+    font-size: 0.8rem;
+    text-align: justify;
+    line-height: 2;
+}
+.charges-text-section span{
+    font-weight: 500;
+}
+.disclaimer-section h5 {
+    color: #555;
+    font-weight: 500;
+}
+.disclaimer-section p{
+     font-size: 0.8rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+.charges-table button{ 
+    cursor:auto;
+}

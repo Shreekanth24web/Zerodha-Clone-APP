@@ -1,0 +1,10 @@
+.signup-hero-section h1 {
+    color: #424242 !important;
+}
+.signup-form label{
+    color: #424242;
+}
+.signup-btn,.login-btn{
+    padding: 5px 10px !important;
+    border-radius: 5px !important; 
+}

@@ -1,0 +1,17 @@
+.about-hero-section h1{
+    color: #424242; 
+    line-height: 1.5;
+}
+.about-para-section p{
+    color: #424242;
+    font-size: 1.1rem;
+    line-height: 1.8; 
+}
+.about-para-section a{
+    text-decoration: none;
+    color: #387ed1;
+    font-weight: 500;
+}
+.about-para-section a:hover{
+    color: #444;
+}

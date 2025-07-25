@@ -1,0 +1,44 @@
+/* Topbar */
+ 
+.indices-container {
+    flex-basis: 32%;
+    height: 100%;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nifty,
+.sensex {
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.index {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgb(97, 97, 97);
+    white-space: nowrap;
+}
+
+.index-points {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: rgb(223, 73, 73);
+}
+
+.percent {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: rgb(146, 146, 146);
+}
+
+/* sudo selectors */
+.index:hover {
+    cursor: pointer;
+}

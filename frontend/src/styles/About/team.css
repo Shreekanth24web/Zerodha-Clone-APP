@@ -1,0 +1,32 @@
+ 
+.team-text-section{
+    margin-left: -110px;
+}
+.team-text-section p {
+    color: #424242;
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.team-text-section a {
+    text-decoration: none;
+    color: #387ed1;
+    font-weight: 500
+}
+
+.team-text-section a:hover {
+    color: #444;
+}
+.team-img-section h4,h6{
+    margin-left: 0px;
+}
+.team-img-section button{
+    /* color: red; */
+    color: #424242;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.card-body{
+    text-align: justify;
+}

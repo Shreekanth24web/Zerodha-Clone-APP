@@ -1,0 +1,20 @@
+.hero-img{
+    width: 50rem;
+    margin: 0 auto;
+}
+.hero-section h1{
+  color: #424242;
+}
+.hero-section p{
+    color: #424242;
+}
+.hero-btn{
+    background-color: #387ed1;
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+}
+.hero-btn:hover{
+    background-color: #191919;
+    color: white;
+}

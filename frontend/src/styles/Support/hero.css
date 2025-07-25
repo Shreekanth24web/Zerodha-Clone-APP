@@ -1,0 +1,20 @@
+.input-icon{ 
+    position: relative;
+    top: 0;
+}
+.input-icon i{
+    position: absolute;
+    top: 0;
+    right: 0; 
+    margin-top: 25px;
+    margin-right: 80px;
+    color: #424242;
+    opacity: 0.6;
+}
+.input-icon input::placeholder{
+    color: #999;
+}
+
+.input-icon input {
+    border-radius: 3px !important; 
+}

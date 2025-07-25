@@ -1,0 +1,110 @@
+
+/* Orders */
+.orders {
+  width: 100%;
+  height: 90vh;
+}
+
+.no-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-orders .icon {
+  transform: scale(4);
+  color: rgb(173, 173, 173);
+  display: block;
+}
+
+.no-orders p {
+  margin-top: 6%;
+  color: rgb(173, 173, 173);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.order-btn {
+  text-decoration: none;
+  background: rgb(77, 77, 248);
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: #fff;
+  margin-top: 2%;
+}
+
+.order-btn:hover {
+  background: rgb(110, 110, 253);
+} 
+
+ 
+
+.orders-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(71, 71, 71); 
+  margin-bottom: 2%;
+  margin-top: -3%;
+}
+
+.orders-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table tr {
+  border-top: 1px solid rgb(211, 211, 211);
+  border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.orders-table th {
+  padding: 10px 0px;
+  color: rgb(94, 94, 94);
+  font-weight: 500; 
+  text-align: center;
+}
+
+.orders-table tr th:first-child,
+.orders-table tr td:first-child {
+  text-align: left;
+}
+
+.orders-table tr td:first-child p {
+    background: rgb(255, 197, 197);
+    color: rgb(233, 120, 120);
+    width: 50%;
+    text-align: center;
+    border-radius: 2px;
+}
+
+ 
+
+.orders-table td {
+  padding: 10px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: rgb(73, 73, 73);
+}
+
+ 
+.orders-table td.profit {
+  color: rgb(72, 194, 55);
+}
+
+.orders-table td.loss {
+  color: rgb(250, 118, 78);
+}
+
+.orders-table td.green{
+ color: #48c237;
+  font-weight: 500;
+}
+.orders-table td.red{
+  color: #fa764e;
+  font-weight: 500;
+}
+
+ 
+ 
