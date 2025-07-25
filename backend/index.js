@@ -12,9 +12,10 @@ const jwt = require("jsonwebtoken")
 const bcrypt = require("bcryptjs")
 const JWT_SECRET = process.env.JWT_SECRET;
 
- 
+
 app.use(cors());
 app.use(bodyParser.json())
+app.use(express.json());
 
 const { HoldingsModel } = require("./model/HoldingsModel.js")
 const { PositionsModel } = require("./model/PositionsModel.js")
@@ -52,18 +53,29 @@ app.get('/allPositions', async (req, res) => {
 
 //newOrders
 app.post("/newOrder", async (req, res) => {
+    console.log('neworders page')
     try {
-        let newOrder = new OrdersModel({
-            name: req.body.name,
-            qty: req.body.qty,
-            price: req.body.price,
-            mode: req.body.mode
-        })
-        newOrder.save()
+        // let newOrder = new OrdersModel({
+        //     name: req.body.name,
+        //     qty: req.body.qty,
+        //     price: req.body.price,
+        //     mode: req.body.mode
+        // })
+        // await newOrder.save()
+        // console.log(newOrder)
+        // res.status(201).json({
+        //     message: "Order created successfully",
+        //     order: newOrder
+        // });
+
+        const data = req.body;
+        const newOrder = new OrdersModel(data);
+        await newOrder.save();
+        res.status(201).json({ message: "Order saved", data: newOrder });
 
     } catch (err) {
-        console.error("Error saving newOrder:", err);
-        res.status(500).json({ err: "Internal Server Error" });
+        console.error("Error creating order:", err);
+        res.status(500).json({ err: "Failed to save order" });
     }
 
 })

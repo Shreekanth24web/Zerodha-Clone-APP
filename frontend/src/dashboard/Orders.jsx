@@ -2,26 +2,29 @@ import { Link } from "react-router-dom";
 import '../styles/Dashboard/orders.css'
 import { useEffect, useState } from "react";
 import axios from 'axios'
+import BuyActionWindow from "./BuyActionWindow";
 function Orders() {
-    const [allOrders, setAllOrders] = useState([]
+    const [allOrders, setAllOrders] = useState([])
 
-    )
+    const fetchOrders = () => {
+        axios.get(`${process.env.REACT_APP_API_URL}/allOrders`)
+            .then((res) => {
+                setAllOrders(res.data)
+            })
+            .catch((err) => console.error("Orders page --->", err));
+    }
+
     useEffect(() => {
-        axios.get(`${process.env.REACT_APP_API_URL}/allOrders`).then((res) => { 
-            setAllOrders(res.data)
-        })
-    }, [])
-
-
+        fetchOrders(); 
+    })
 
     const hadnleDelete = (id) => {
- 
-        if (window.confirm("Are you sure you want to delete this order?")) {
 
+        if (window.confirm("Are you sure you want to delete this order?")) {
             axios.delete(`${process.env.REACT_APP_API_URL}/deleteOrders/` + id)
                 .then((res) => {
-                    console.log(res.data.data)
-                     alert("Order deleted successfully!");
+
+                    alert("Order deleted successfully!");
                     setAllOrders(prev => prev.filter(order => order._id !== id));
                 })
                 .catch((err) => {

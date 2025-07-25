@@ -1,13 +1,11 @@
 import "./BuyActionWindow.css";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { useContext, useState } from 'react';
 import GeneralContext from './GeneralContext';
-
 import axios from 'axios';
 
-const BuyActionWindow = ({ uid }) => {
-
+const BuyActionWindow = ({ uid }) => { 
     const [stockQuantity, setStockQuantity] = useState(1);
     const [stockPrice, setStockPrice] = useState(0.0);
 
@@ -17,28 +15,31 @@ const BuyActionWindow = ({ uid }) => {
     }
 
     const handleBuyClick = () => {
-        axios.post(`${process.env.REACT_APP_API_URL}/newOrder`, {
-            name: uid,
-            qty: stockQuantity,
-            price: stockPrice,
-            mode: "BUY"
-        })
-        window.location.reload()
-        closeBuyWindow();
+        if (window.confirm("Are you sure you want to buy this stock?")) {
+            axios.post(`${process.env.REACT_APP_API_URL}/newOrder`, {
+                name: uid,
+                qty: stockQuantity,
+                price: stockPrice,
+                mode: "BUY"
+            })
+            alert("Buy Order succesxsfully!");
+            closeBuyWindow();
+        }
     }
 
     const handleSellClick = () => {
-        axios.post(`${process.env.REACT_APP_API_URL}/newOrder`, {
-            name: uid,
-            qty: stockQuantity,
-            price: stockPrice,
-            mode: "SELL"
-        })
-        window.location.reload()
-        closeBuyWindow();
+        if (window.confirm("Are you sure you want to sell this stock?")) {
+
+            axios.post(`${process.env.REACT_APP_API_URL}/newOrder`, {
+                name: uid,
+                qty: stockQuantity,
+                price: stockPrice,
+                mode: "SELL"
+            })
+            alert("Sell Order successfully!");
+            closeBuyWindow();
+        }
     }
-
-
 
     return (
         <div className="containerClass" id="buy-window" draggable="true">
