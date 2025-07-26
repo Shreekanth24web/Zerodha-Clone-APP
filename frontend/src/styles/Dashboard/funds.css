@@ -1,59 +1,20 @@
 /* Funds */
-.funds {
-  text-align: right;
-  margin-top: -30px;
-}
-
 .funds p {
-  font-size: 0.8rem;
-  color: rgb(125, 125, 125);
+  font-size: 0.8rem; 
   margin-top: 5px;
-}
-
-.funds .btn {
-  text-decoration: none;
-  padding: 6px 20px;
-  border-radius: 4px;
-  color: #fff;
-  margin-right: 2px;
-  margin-left: 2px;
-  font-weight: 500;
-}
-
-.btn-green {
-  background: #4caf50;
-}
-
-.btn-blue {
-  background: #4184f3;
-}
-
-/* sudo selectors */
-.btn-green:hover {
-  opacity: 0.8;
-  background: #4caf50;
-}
-
-.btn-blue:hover {
-  opacity: 0.8;
 }
 
 .funds-text {
   font-weight: 600;
-  color: rgb(71, 71, 71);
-}
-.funds-table{
-  margin-top: -90px;
-}
-.list-group{
-  background-color:#4caf50;
-}
-.commodity {
-  padding: 2% 8%;
-  text-align: center;
+  color: #474747; 
 }
 
-.commodity p {
-  margin-bottom: 10%;
-  color: #c9c9c9;
+.funds-table{
+  margin-top: -90px; 
 }
+ 
+.commodity {
+  padding: 2% 8%;
+}
+
+ 

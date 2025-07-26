@@ -1,5 +1,5 @@
-import "./BuyActionWindow.css";
-import { Link, useNavigate } from 'react-router-dom';
+import '../styles/Dashboard/BuyActionWindow.css'
+import { Link } from 'react-router-dom';
 
 import { useContext, useState } from 'react';
 import GeneralContext from './GeneralContext';
@@ -65,7 +65,7 @@ const BuyActionWindow = ({ uid }) => {
                 <div className="orders-btns">
                     <Link className='btn btn-blue btn-primary' onClick={handleBuyClick}>Buy</Link>
                     <Link className='btn btn-red btn-danger' onClick={handleSellClick}>Sell</Link>
-                    <Link to='' className='btn btn-dark' onClick={handleCancelClick}>
+                    <Link to='#' className='btn btn-dark' onClick={handleCancelClick}>
                         Cancel
                     </Link>
                 </div>

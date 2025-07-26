@@ -66,8 +66,8 @@ function Menu() {
                         </Link>
                     </li>
                     <li>
-                        <p onClick={handleLogout} style={{ textDecoration: 'none', fontWeight: '800' }} >
-                            <p className={selectedMenu === 5 ? activeMenuClass : menuClass} style={{ fontSize: '15px', fontWeight: '700',cursor:'pointer' }}>LogOut</p>
+                        <p onClick={handleLogout} className={selectedMenu === 5 ? activeMenuClass : menuClass} style={{ fontSize: '15px', fontWeight: '700', cursor: 'pointer' }}>
+                            LogOut
                         </p>
                     </li>
                 </ul>

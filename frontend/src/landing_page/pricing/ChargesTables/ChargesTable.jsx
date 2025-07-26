@@ -12,11 +12,11 @@ function ChargesTable() {
     const location = useLocation();
 
     useEffect(() => {
-        const hash = location.hash.replace('#', ''); 
+        const hash = location.hash.replace('#', '');
         if (hash) {
             setActiveTab(hash);
         } else {
-            setActiveTab('tab-equity');  
+            setActiveTab('tab-equity');
         }
     }, [location]);
 
@@ -37,10 +37,10 @@ function ChargesTable() {
 
                 <ul className="nav nav-underline">
                     <li className="nav-item fs-4 mx-4">
-                        <HashLink 
+                        <HashLink
                             className={`nav-link hover-tab ${activeTab === 'tab-equity' ? 'active' : ''}`}
                             smooth to='/pricing/#tab-equity'
-                           >
+                        >
                             Equity
                         </HashLink>
 
@@ -49,14 +49,18 @@ function ChargesTable() {
                         <HashLink
                             className={`nav-link hover-tab ${activeTab === 'tab-currency' ? 'active' : ''} `}
                             smooth to='/pricing/#tab-currency'
-                            >Curency</HashLink>
+                        >
+                            Curency
+                        </HashLink>
 
                     </li>
                     <li className="nav-item fs-4 mx-4">
                         <HashLink
-                            className={`nav-link hover-tab ${activeTab === 'tab-commodity' ? 'active' : '' } `}
+                            className={`nav-link hover-tab ${activeTab === 'tab-commodity' ? 'active' : ''} `}
                             smooth to='/pricing/#tab-commodity'
-                             >Commodity</HashLink>
+                        >
+                            Commodity
+                        </HashLink>
                     </li>
 
                 </ul>

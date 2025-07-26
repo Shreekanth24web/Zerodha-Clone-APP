@@ -95,34 +95,34 @@ function Holdings() {
             </div>
 
     
-            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
-                    <div class="col">
-                        <div class="card h-100">
+            <div className="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
+                    <div className="col">
+                        <div className="card h-100">
 
-                            <div class="card-body">
-                                <h5 class="card-title">Total investment</h5>
+                            <div className="card-body">
+                                <h5 className="card-title">Total investment</h5>
                                 <h5 className='card-text mt-3' style={{ fontWeight: '500' }}>
                                     ₹ {totalInvestment.toLocaleString("en-IN")}
                                 </h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
+                    <div className="col">
+                        <div className="card h-100">
 
-                            <div class="card-body">
-                                <h5 class="card-title">Current value</h5>
+                            <div className="card-body">
+                                <h5 className="card-title">Current value</h5>
                                 <h5 className='card-text mt-3' style={{ fontWeight: '500' }}>
                                     ₹ {currentValue.toLocaleString("en-IN")}
                                 </h5>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
+                    <div className="col">
+                        <div className="card h-100">
 
-                            <div class="card-body">
-                                <h5 class="card-title">P&L</h5>
+                            <div className="card-body">
+                                <h5 className="card-title">P&L</h5>
                                 <h5 style={{ fontWeight: '500' }} className={totalPLClass}>
                                     ₹ {profitAndLoss.toLocaleString('en-IN')} <span className='mt-1' style={{ fontSize: '14px' }}>({totalPLPercetage.toFixed(2)}%)</span>
                                 </h5>

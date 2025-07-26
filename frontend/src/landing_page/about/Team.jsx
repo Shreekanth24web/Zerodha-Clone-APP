@@ -27,7 +27,7 @@ function Team() {
                     </p>
                     <p className='px-5'>
                         Connect on <a href="">Homepage</a> / <a href="">TradingQnA</a> /
-                        <a href="">Twitter</a>
+                        <a href="#">Twitter</a>
                     </p>
                 </div>
 

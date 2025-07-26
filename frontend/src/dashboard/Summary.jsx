@@ -44,17 +44,6 @@ function Summary() {
         datasets: [
             {
                 data: [totalInvestment, currentValue, profitAndLoss],
-                borderColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(54, 162, 235 )',
-                    'rgb(75, 192, 192 )',
-                ],
-                backgroundColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(54, 162, 235)',
-                    'rgb(75, 192, 192)',
-                    
-                ],
                 backgroundColor: [
                     'rgba(255, 97, 131, 0.7)',
                     'rgba(54, 162, 235, 0.70)',
@@ -66,7 +55,6 @@ function Summary() {
                     'rgb(75, 192, 192)',  
                 ],
                 borderWidth: 1,
-                
             },
         ],
         labels: ["Total Investment", 'Current Value', "P&L"],

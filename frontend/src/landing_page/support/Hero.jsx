@@ -7,8 +7,8 @@ function Hero() {
                 <div className="row px-5 d-flex justify-content-between" >
                     <div className=" d-flex justify-content-between mb-3" >
                         <h5 className='px-5'>Support Portal</h5>
-                        <h5 className="border-bottom border-2 fw-normal py-1 ">
-                            <a href="" className='text-decoration-none' style={{color:'#fff'}}>
+                        <h5 className="border-bottom border-2 fw-normal py-1">
+                            <a href="#" className='text-decoration-none' style={{color:'#fff'}}>
                                Track tickets
                             </a>
                         </h5>
@@ -40,10 +40,10 @@ function Hero() {
                         <h4 style={{ fontWeight: "500" }}>Featured</h4>
                         <ol>
                             <li className="mb-3 ">
-                                <a href="" style={{ color: '#fff' }}>Surveillance measure on scrips - June 2025</a>
+                                <a href="#" style={{ color: '#fff' }}>Surveillance measure on scrips - June 2025</a>
                             </li>
                             <li>
-                                <a href="" style={{ color: '#fff' }}>Offer for sale (OFS) – June 2025</a>
+                                <a href="#" style={{ color: '#fff' }}>Offer for sale (OFS) – June 2025</a>
                             </li>
                         </ol>
                     </div>

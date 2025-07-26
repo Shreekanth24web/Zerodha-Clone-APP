@@ -3,18 +3,25 @@ import '../styles/Dashboard/funds.css'
 function Funds() {
     return (
         <div className='container'>
+            <div className="col funds text-end">
 
-            <div className="row funds">
-                <div className="col">
-                    <Link className="btn btn-green">Add funds</Link>
-                    <Link className="btn btn-blue mx-3">Withdraw</Link>
-                    <p className='mx-3'>*Instant, zero-cost fund transfers with UPI </p>
-                </div>
+                <button className="btn btn-outline-success fw-bold">
+                    Add funds
+                </button>
+
+                <button className="btn btn-outline-primary mx-3 fw-bold">
+                    Withdraw
+                </button>
+
+                <p className='text-muted'>
+                    *Instant, zero-cost fund transfers with UPI
+                </p>
+
             </div>
-
             <div className="row d-flex align-items-center funds-table">
-                <p className='funds-text fs-3'>Equity</p>
+
                 <div className="col">
+                    <p className='funds-text fs-3 '>Equity</p>
 
                     <ul className="list-group list-group-item-warning">
                         <li className="list-group-item d-flex justify-content-between align-items-center">
@@ -72,12 +79,15 @@ function Funds() {
                     </ul>
 
                 </div>
-                <div className="col ">
-                    <div className="commodity">
-                        <p>You don't have a commodity account</p>
-                        <Link className="btn btn-blue">Open Account</Link>
+
+                <div className="col">
+                    <div className="commodity text-center">
+                        <p className='text-muted'>You don't have a commodity account</p>
+                        <button to='#' className="btn btn-primary">
+                            Open Account</button >
                     </div>
                 </div>
+
             </div>
         </div>
     );

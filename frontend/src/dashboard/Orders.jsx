@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import '../styles/Dashboard/orders.css'
 import { useEffect, useState } from "react";
-import axios from 'axios'
-import BuyActionWindow from "./BuyActionWindow";
+import axios from 'axios' 
 function Orders() {
     const [allOrders, setAllOrders] = useState([])
 

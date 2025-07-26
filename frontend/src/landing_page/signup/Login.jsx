@@ -15,7 +15,7 @@ function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:4001/login", {
+            const res = await axios.post(`${process.env.REACT_APP_API_URL}/login`, {
                 username: formData.username,   
                 password: formData.password
             });
@@ -60,7 +60,7 @@ function Login() {
                     />
                 </div>
                 <button className='btn btn-success btn-sm fw-bold mb-3 login-btn'>Login</button> <br />
-                <Link to="/signup" className=' '>if you don't have an account</Link>
+                <Link to="/signup">if you don't have an account</Link>
             </form>
         </div>
     );

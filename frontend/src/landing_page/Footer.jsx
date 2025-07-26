@@ -13,84 +13,84 @@ function Footer() {
             </p>
 
             <div className='d-flex gap-3 fs-4 social-app-g-1'>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-square-facebook"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
             <hr />
             <div className='d-flex gap-3 fs-4 social-app-g-2'>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-youtube"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="">
+              <a href="#">
                 <i className="fa-brands fa-telegram"></i></a>
             </div>
           </div>
 
           <div className="col  account-section">
             <h5>Account</h5>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Open demat account</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Minor demat account</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>NRI demat account</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Commodity</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Dematerialisation</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Fund transfer</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>MTF</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Referral program</p>
             </a>
           </div>
 
           <div className="col account-section">
             <h5>Support</h5>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Contact us</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Support portal</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>How to file a complaint?</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Status of your complaints</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Dematerialisation</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Bulletin</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Circular</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Downloads</p>
             </a>
 
@@ -98,25 +98,25 @@ function Footer() {
 
           <div className="col account-section">
             <h5>Company</h5>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>About</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Philosophy</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Press & media</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Careers</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Zerodha Cares (CSR)</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Zerodha.tech</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Open source</p>
             </a>
 
@@ -124,25 +124,25 @@ function Footer() {
 
           <div className="col account-section">
             <h5>Quick links</h5>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Upcoming IPOs</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Brokerage charges</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Market holidays</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Economic calendar</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Calculators</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Calculators</p>
             </a>
-            <a href="">
+            <a href="#">
               <p className='mt-3'>Sectors</p>
             </a>
           </div>
@@ -154,7 +154,7 @@ function Footer() {
             Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration no.: INZ000031633 CDSL/NSDL: Depository services through Zerodha Broking Ltd. – SEBI Registration no.: IN-DP-431-2019 Commodity Trading through Zerodha Commodities Pvt. Ltd. MCX: 46025; NSE-50001 – SEBI Registration no.: INZ000038238 Registered Address: Zerodha Broking Ltd., #153/154, 4th Cross, Dollars Colony, Opp. Clarence Public School, J.P Nagar 4th Phase, Bengaluru - 560078, Karnataka, India. For any complaints pertaining to securities broking please write to input <a href="mailto:complaints@zerodha.com">complaints@zerodha.com</a>, for DP related to <a href="mailto:dp@zerodha.com">dp@zerodha.com</a>. Please ensure you carefully read the Risk Disclosure Document as prescribed by SEBI | ICF
           </p>
           <p>
-            Procedure to file a complaint on <a href="3">SEBI SCORES</a>: Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy redressal of the grievances
+            Procedure to file a complaint on <a href="#">SEBI SCORES</a>: Register on SCORES portal. Mandatory details for filing complaints on SCORES: Name, PAN, Address, Mobile Number, E-mail ID. Benefits: Effective Communication, Speedy redressal of the grievances
           </p>
           <p>
             <a href="#">Smart Online Dispute Resolution</a> |<a href='#'> Grievances Redressal Mechanism </a>
