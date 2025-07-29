@@ -13,14 +13,15 @@ const JWT_SECRET = process.env.JWT_SECRET;
 
 
 const allowedOrigins = [
-    "http://localhost:3000",   // Local development
-    "https://zerodha-clone-app.onrender.com"  // Your deployed frontend
+    "http://localhost:3000",
+    "https://zerodha-frontend-9jyg.onrender.com"
 ];
 app.use(cors({
     origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }))
+app.options("*", cors());
 app.use(bodyParser.json())
 app.use(express.json());
 
