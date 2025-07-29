@@ -55,7 +55,7 @@ function Team() {
 
                 <div className="col team-img-section">
                     
-                    <img src="media/Images/kailash.jpg" alt="kailash_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
+                    <img src="media/Images/Kailash.jpg" alt="kailash_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Dr. Kailash Nadh</h4>
                     <h6 className="text-muted">CTO</h6>
 
