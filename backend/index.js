@@ -5,7 +5,6 @@ const PORT = process.env.PORT || 4001;
 const mongoose = require("mongoose");
 const URL = process.env.MONGO_URL;
 const path = require('path');
-
 const cors = require("cors")
 const bodyParser = require("body-parser")
 const jwt = require("jsonwebtoken")
@@ -13,7 +12,15 @@ const bcrypt = require("bcryptjs")
 const JWT_SECRET = process.env.JWT_SECRET;
 
 
-app.use(cors());
+const allowedOrigins = [
+    "http://localhost:3000",   // Local development
+    "https://zerodha-clone-app.onrender.com"  // Your deployed frontend
+];
+app.use(cors({
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+}))
 app.use(bodyParser.json())
 app.use(express.json());
 
@@ -154,13 +161,6 @@ app.post('/login', async (req, res) => {
 
 const buildPath = path.join(__dirname, "../frontend/build");
 app.use(express.static(buildPath));
-// app.get("*", (req, res) => {
-//     res.sendFile(path.join(buildPath, "index.html"));
-// });
-
-
-
-
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)

@@ -19,12 +19,9 @@ function Signup() {
         e.preventDefault();
         try {
             const res = await axios.post(`${process.env.REACT_APP_API_URL}/signup`, formData);
-            console.log("res ---->",res)
-            console.log(res.data)
             alert(res.data.message || "Signup successful");
             navigate("/login")
         } catch (err) {
-            console.log("Error during signup:", err);
             alert(err.response?.data?.msg || "Signup failed");
         }
     }

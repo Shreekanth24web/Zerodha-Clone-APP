@@ -4,8 +4,7 @@ import { useState } from 'react';
 function Navbar() {
     const [menu, setMenu] = useState(0)
 
-    const handlMenuClick = (idx)=>{
-        console.log(idx)
+    const handlMenuClick = (idx)=>{ 
         setMenu(idx)
     }
 
