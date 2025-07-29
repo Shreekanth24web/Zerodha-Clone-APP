@@ -8,7 +8,7 @@ function Equity() {
             <div className="row mt-3">
                 <div className="table-responsive outer-border">
 
-                    <table class="table table-borderless table-hover align-middle  table-hover plain-table">
+                    <table className="table table-borderless table-hover align-middle  table-hover plain-table">
                         <thead>
                             <tr>
                                 <th> &nbsp; &nbsp;</th>

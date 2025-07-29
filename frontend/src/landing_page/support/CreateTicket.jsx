@@ -11,7 +11,7 @@ function CreateTicket() {
                 <div className="col px-5">
                     <h4 className='mb-3'>
                         <a href="#">
-                            <i class="fa-solid fa-circle-plus"></i> &nbsp;
+                            <i className="fa-solid fa-circle-plus"></i> &nbsp;
                             Account Opening
                         </a>
                     </h4>
@@ -38,7 +38,7 @@ function CreateTicket() {
                 <div className="col">
                     <h4 className='mb-3'>
                         <a href="#">
-                            <i class="fa-solid fa-user"></i> &nbsp;
+                            <i className="fa-solid fa-user"></i> &nbsp;
                             Your Zerodha Account
                         </a>
                     </h4>
@@ -65,7 +65,7 @@ function CreateTicket() {
                 <div className="col">
                     <h4 className='mb-3'>
                         <a href="#">
-                          <i class="fa-solid fa-chart-simple"></i>&nbsp;
+                          <i className="fa-solid fa-chart-simple"></i>&nbsp;
                             Kite
                         </a>
                     </h4>
@@ -100,7 +100,7 @@ function CreateTicket() {
                 <div className="col px-5">
                     <h4 className='mb-3'>
                         <a href="#">
-                           <i class="fa-solid fa-credit-card"></i> &nbsp;
+                           <i className="fa-solid fa-credit-card"></i> &nbsp;
                             Funds
                         </a>
                     </h4>
@@ -124,7 +124,7 @@ function CreateTicket() {
                 <div className="col">
                     <h4 className='mb-3'>
                         <a href="#">
-                         <i class="fa-solid fa-clipboard"></i> &nbsp;
+                         <i className="fa-solid fa-clipboard"></i> &nbsp;
                             Console
                         </a>
                     </h4>
@@ -153,7 +153,7 @@ function CreateTicket() {
                 <div className="col">
                     <h4 className='mb-3'>
                         <a href="#">
-                           <i class="fa-solid fa-coins"></i> &nbsp;
+                           <i className="fa-solid fa-coins"></i> &nbsp;
                             Coin
                         </a>
                     </h4>

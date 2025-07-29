@@ -45,10 +45,10 @@ function Trust() {
 
                     <div className="d-flex gap-5 mt-5 align-items-center flex-column flex-md-row ecosystem-text-section" >
                         <a href="#">
-                            <p>Explore our products &nbsp;  <i class="fa-solid fa-arrow-right"></i></p>
+                            <p>Explore our products &nbsp;  <i className="fa-solid fa-arrow-right"></i></p>
                         </a>
                         <a href="#">
-                            <p>Try Kite demo &nbsp; <i class="fa-solid fa-arrow-right"></i> </p>
+                            <p>Try Kite demo &nbsp; <i className="fa-solid fa-arrow-right"></i> </p>
                         </a>
                     </div>
                 </div>

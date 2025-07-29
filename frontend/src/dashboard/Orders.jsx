@@ -62,7 +62,7 @@ function Orders() {
                                         <td className={modeColor}>{item.mode}</td>
                                         <td>
                                             <button className="btn" onClick={() => hadnleDelete(item._id)}>
-                                                <i class="fa-solid fa-trash"></i>
+                                                <i className="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
                                     </tr>
