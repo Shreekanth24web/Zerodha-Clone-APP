@@ -34,10 +34,9 @@ function Team() {
             </div>
 
 
-            <div className="row p-5 text-center">
-
+            <div className="row p-5 text-center"> 
+                
                 <div className="col team-img-section">
-
                     <img src="media/Images/Nikhil.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Nikhil Kamath</h4>
                     <h6 className="text-muted">Co-founder & CFO</h6>
@@ -52,12 +51,11 @@ function Team() {
                            Nikhil is an astute and experienced investor, and he heads financial planning at Zerodha. An avid reader, he always appreciates a good game of chess.
                         </div>
                     </div>
-
                 </div>
 
                 <div className="col team-img-section">
-
-                    <img src="media/Images/kailash.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
+                    
+                    <img src="media/Images/kailash.jpg" alt="kailash_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Dr. Kailash Nadh</h4>
                     <h6 className="text-muted">CTO</h6>
 
@@ -72,11 +70,10 @@ function Team() {
                            Kailash has a PhD in Artificial Intelligence & Computational Linguistics, and is the brain behind all our technology and products. He has been a developer from his adolescence and continues to write code every day.
                         </div>
                     </div>
-
                 </div>
 
                 <div className="col  team-img-section">
-                    <img src="media/Images/Venu.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
+                    <img src="media/Images/Venu.jpg" alt="Venu_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Venu Madhav</h4>
                     <h6 className="text-muted">COO</h6>
 
@@ -100,7 +97,7 @@ function Team() {
 
                 <div className="col  team-img-section">
 
-                    <img src="media/Images/Hanan.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
+                    <img src="media/Images/Hanan.jpg" alt="Hanan_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Hanan Delvi</h4>
                     <h6 className="text-muted">CCO</h6>
 
@@ -119,7 +116,7 @@ function Team() {
 
                 <div className="col  team-img-section">
 
-                    <img src="media/Images/Seema.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
+                    <img src="media/Images/Seema.jpg" alt="Seema_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Seema Patil</h4>
                     <h6 className="text-muted">Director</h6>
 
@@ -138,7 +135,7 @@ function Team() {
                 </div>
 
                 <div className="col  team-img-section">
-                    <img src="media/Images/karthik.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
+                    <img src="media/Images/karthik.jpg" alt="karthik_IMG_ERR" className="rounded-circle" style={{ width: "50%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Karthik Rangappa</h4>
                     <h6 className="text-muted">Chief of Education</h6>
 
@@ -161,7 +158,7 @@ function Team() {
             <div className="row px-5 mt-4 mb-5 text-center">
 
                 <div className="col  team-img-section mb-5">
-                    <img src="media/Images/Austin.jpg" alt="Nithin_IMG_ERR" className="rounded-circle" style={{ width: "18%" }} />
+                    <img src="media/Images/Austin.jpg" alt="Austin_IMG_ERR" className="rounded-circle" style={{ width: "18%" }} />
                     <h4 className="mt-3 " style={{ color: "#424242", fontWeight: "400" }}>Austin Prakesh</h4>
                     <h6 className="text-muted">Director Strategy</h6>
 
