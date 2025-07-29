@@ -55,19 +55,6 @@ app.get('/allPositions', async (req, res) => {
 app.post("/newOrder", async (req, res) => {
     console.log('neworders page')
     try {
-        // let newOrder = new OrdersModel({
-        //     name: req.body.name,
-        //     qty: req.body.qty,
-        //     price: req.body.price,
-        //     mode: req.body.mode
-        // })
-        // await newOrder.save()
-        // console.log(newOrder)
-        // res.status(201).json({
-        //     message: "Order created successfully",
-        //     order: newOrder
-        // });
-
         const data = req.body;
         const newOrder = new OrdersModel(data);
         await newOrder.save();
